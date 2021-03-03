@@ -1,0 +1,32 @@
+version: "3.4"
+
+x-defaults: &defaults
+  environment:
+    EULA: "TRUE"
+    TYPE: "PAPER"
+    VERION: "${MINECRAFT_VERSION}"
+    UID: "${DOCKER_UID}"
+    GID: "${DOCKER_GID}"
+  image: itzg/minecraft-server
+
+services:
+  router:
+    command: "-mapping bedwars.${HOSTNAME}=bedwars:25565,thewalls.${HOSTNAME}=thewalls:25565,hungergames.${HOSTNAME}=hungergames:25565"
+    image: itzg/mc-router
+    ports:
+      - "25565:25565"
+
+  bedwars:
+    <<: *defaults
+    volumes:
+      - "./data/bedwars:/data"
+
+  thewalls:
+    <<: *defaults
+    volumes:
+      - "./data/thewalls:/data"
+
+  hungergames:
+    <<: *defaults
+    volumes:
+      - "./data/hungergames:/data"

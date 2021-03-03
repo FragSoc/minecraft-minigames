@@ -1,0 +1,13 @@
+vars.sh
+data/*/*.jar
+data/*/cache
+data/*/logs
+data/*/eula.txt
+data/*/help.yml
+data/*/usercache.json
+data/*/whitelist.json
+data/*/version_history.json
+data/*/banned*
+data/*/world*
+data/*/ops.json
+data/*/plugins/*.jar
