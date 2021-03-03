@@ -40,4 +40,4 @@ if [ -n "${OPS_FILE_URL}" ]; then
 fi
 
 # Restart servers
-docker-compose restart "${GAME_MODES[@]}"
+docker-compose restart "${GAME_MODES[@]}" || docker-compose up -d "${GAME_MODES[@]}"
