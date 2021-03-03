@@ -1,5 +1,5 @@
 # The external domain to run the servers under
-HOSTNAME="edjoduf.co.uk"
+HOSTNAME="example.com"
 
 # The User IDs to run the containers as, if you don't know what this is, don't change them
 DOCKER_UID="1000"

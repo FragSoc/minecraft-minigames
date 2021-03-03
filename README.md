@@ -1,5 +1,9 @@
 # Minecraft Minigames Plug and Play
 
+A repo to help run [Minecraft](https://www.minecraft.net) multiplayer minigames quickly, with a few commands out of the box.
+
+Uses itzg's [minecraft docker image](https://github.com/itzg/docker-minecraft-server) and [minecraft router](https://github.com/itzg/mc-router).
+
 Game Mode | Service Name | IP-based Address | Host-based Address
 ---|---|---|---
 Hunger Games | `hungergames` | `<your ip>:25568` | `hungergames.<your domain>`
@@ -15,6 +19,15 @@ Bed Wars | `bedwars` | `<your ip>:25566` | `bedwars.<your domain>`
 
 ## Connecting
 
-If you have a domain name pointing at the server you're running on, specify it in the `vars.sh` file, make sure the `router` service is up (`docker-compose up -d router`), and you can connect to them with the address in the table below.
+If you have a domain name pointing at the server you're running on, specify it in the `vars.sh` file, make sure the `router` service is up (`docker-compose up -d router`), and you can connect to them with the address in the table.
 
-If you don't have a domain name, use the IP-based address in the table below.
+If you don't have a domain name, use the IP-based address in the table.
+
+## Custom Worlds
+
+If you want to use your own worlds in the games, don't pass the `-s` flag to the setup script.
+Instead, unpack your world files (`world`, `world_the_end`, `world_the_nether`), into the respective `data` folder for the gamemode.
+Special configuration might be required:
+
+- For hunger games, follow the setup guide [on the plugin wiki](https://github.com/ShaneBeeStudios/HungerGames/wiki/Arena-Setup)
+- For bed wars, follow the setup guide [on the bukkit page](https://dev.bukkit.org/projects/bedwars/pages/setup)
