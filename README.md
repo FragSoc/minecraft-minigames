@@ -15,8 +15,6 @@ Bed Wars | `bedwars` | `<your ip>:25566` | `bedwars.<your domain>`
 
 ## Connecting
 
-### With Hostnames
-
 If you have a domain name pointing at the server you're running on, specify it in the `vars.sh` file, make sure the `router` service is up (`docker-compose up -d router`), and you can connect to them with the address in the table below.
 
 If you don't have a domain name, use the IP-based address in the table below.
