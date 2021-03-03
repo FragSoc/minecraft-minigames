@@ -7,6 +7,7 @@ x-defaults: &defaults
     VERION: "${MINECRAFT_VERSION}"
     UID: "${DOCKER_UID}"
     GID: "${DOCKER_GID}"
+    MEMORY: "2G"
   image: itzg/minecraft-server
 
 services:
