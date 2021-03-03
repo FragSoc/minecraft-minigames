@@ -22,6 +22,8 @@ services:
       - "25566:25565"
     volumes:
       - "./data/bedwars:/data"
+      # Mount server.properties as read-only because paper is stupid and keeps reordering the contents
+      - "./data/bedwars/server.properties:/data/server.properties:ro"
 
   thewalls:
     <<: *defaults
@@ -29,6 +31,8 @@ services:
       - "25567:25565"
     volumes:
       - "./data/thewalls:/data"
+      # Mount server.properties as read-only because paper is stupid and keeps reordering the contents
+      - "./data/thewalls/server.properties:/data/server.properties:ro"
 
   hungergames:
     <<: *defaults
@@ -36,3 +40,5 @@ services:
       - "25568:25565"
     volumes:
       - "./data/hungergames:/data"
+      # Mount server.properties as read-only because paper is stupid and keeps reordering the contents
+      - "./data/hungergames/server.properties:/data/server.properties:ro"
