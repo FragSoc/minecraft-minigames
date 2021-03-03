@@ -9,6 +9,6 @@ DOCKER_GID="1000"
 MINECRAFT_VERSION=1.16.5
 HUNGER_GAMES_VERSION=4.15.5
 
-# The google drive ID of the ops file to use
+# The URL to download the ops file from
 # if left blank servers will create their own ops files normally
-OPS_GDRIVE_ID="1G8kHpFKIHUuIpQ16WQRX192A2f6JO7ay"
+OPS_FILE_URL=

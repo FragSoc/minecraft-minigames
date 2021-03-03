@@ -22,10 +22,12 @@ for mode in "${GAME_MODES[@]}"; do
 done
 
 # Download ops file
-if [ -n "${OPS_GDRIVE_ID}" ]; then
-  wget --no-check-certificate "https://docs.google.com/uc?export=download&id=${OPS_GDRIVE_ID}" -O data/bedwars/ops.json
-  cp data/bedwars/ops.json data/hungergames/ops.json
-  cp data/bedwars/ops.json data/thewalls/ops.json
+if [ -n "${OPS_FILE_URL}" ]; then
+  wget --no-check-certificate "${OPS_FILE_URL}" -O tmp/minecraft-ops.json
+  for mod in "${GAME_MODES[@]}"; do
+    cp -v /tmp/minecraft-ops.json data/$mode/ops.json
+  done
+  rm -v /tmp/minecraft-ops.json
 fi
 
 # Restart servers
