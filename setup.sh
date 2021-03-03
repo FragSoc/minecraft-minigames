@@ -20,7 +20,7 @@ fi
 if [[ "$1" == "--use-static-maps" || "$1" == "-s" ]]; then
   # Decompress and copy static maps in
   for mode in "${GAME_MODES[@]}"; do
-    rm -rv data/$mode/world* /tmp/$mode
+    rm -rfv data/$mode/world* /tmp/$mode
     unzip static_maps/$mode/world.zip -d /tmp
     cp -vr /tmp/$mode/* data/$mode
   done
@@ -36,7 +36,7 @@ if [ -n "${OPS_FILE_URL}" ]; then
   for mode in "${GAME_MODES[@]}"; do
     cp -v /tmp/minecraft-ops.json data/$mode/ops.json
   done
-  rm -v /tmp/minecraft-ops.json
+  rm -fv /tmp/minecraft-ops.json
 fi
 
 # Restart servers
