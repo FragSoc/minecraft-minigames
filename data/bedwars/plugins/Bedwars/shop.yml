@@ -1,0 +1,546 @@
+# +----------------------------------------------------+
+# <                    Shop-Config                     >
+# <                                                    >
+# <                How to edit the shop                >
+# <               ----------------------               >
+# <                 1. Close this file                 >
+# <              2. Type /bw shop in game              >
+# <             You can get more help here             >
+# <               https://bit.ly/38ZsnJA               >
+# +----------------------------------------------------+
+
+categories:
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.blocks.description
+  material: SANDSTONE
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SANDSTONE
+        amount: 2
+    currency: BRONZE
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: END_STONE
+    currency: BRONZE
+    amount: 6
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WHITE_STAINED_GLASS
+    currency: BRONZE
+    amount: 4
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GLOWSTONE
+    currency: BRONZE
+    amount: 16
+  nameKey: shop.category.blocks.name
+  nameColor: '6'
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.weapons.description
+  material: IRON_SWORD
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: STICK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            KNOCKBACK: 1
+    currency: BRONZE
+    amount: 10
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WOODEN_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 1
+    currency: IRON
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WOODEN_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 2
+    currency: IRON
+    amount: 3
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WOODEN_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 3
+    currency: IRON
+    amount: 7
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: IRON_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            KNOCKBACK: 2
+            DAMAGE_ALL: 4
+    currency: GOLD
+    amount: 10
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SHIELD
+    currency: GOLD
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            ARROW_INFINITE: 1
+    currency: GOLD
+    amount: 3
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            ARROW_INFINITE: 1
+            ARROW_DAMAGE: 1
+    currency: GOLD
+    amount: 7
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            ARROW_INFINITE: 1
+            ARROW_DAMAGE: 3
+            ARROW_KNOCKBACK: 1
+    currency: GOLD
+    amount: 13
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+    currency: GOLD
+    amount: 1
+  nameKey: shop.category.weapons.name
+  nameColor: a
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.armor.description
+  material: IRON_CHESTPLATE
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: LEATHER_HELMET
+    currency: BRONZE
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: LEATHER_LEGGINGS
+    currency: BRONZE
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: LEATHER_BOOTS
+    currency: BRONZE
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHAINMAIL_CHESTPLATE
+    currency: IRON
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHAINMAIL_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 2
+    currency: IRON
+    amount: 3
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHAINMAIL_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 3
+            THORNS: 1
+    currency: IRON
+    amount: 7
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: LEATHER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Magic Armor"}],"text":""}'
+    currency: BRONZE
+    amount: 3
+  nameKey: shop.category.armor.name
+  nameColor: c
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.tools.description
+  material: IRON_PICKAXE
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WOODEN_PICKAXE
+    currency: BRONZE
+    amount: 6
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: STONE_PICKAXE
+    currency: IRON
+    amount: 2
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: IRON_PICKAXE
+    currency: GOLD
+    amount: 1
+  nameKey: shop.category.tools.name
+  nameColor: b
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.food.description
+  material: COOKIE
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: APPLE
+    currency: BRONZE
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+    currency: BRONZE
+    amount: 2
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+    currency: GOLD
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CAKE
+    currency: IRON
+    amount: 2
+  nameKey: shop.category.food.name
+  nameColor: e
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.storage.description
+  material: CHEST
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHEST
+    currency: IRON
+    amount: 1
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_CHEST
+    currency: GOLD
+    amount: 1
+  nameKey: shop.category.storage.name
+  nameColor: '3'
+  meta:
+    ==: ItemMeta
+    meta-type: TILE_ENTITY
+    blockMaterial: CHEST
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.potions.description
+  material: GLASS_BOTTLE
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:healing
+    currency: IRON
+    amount: 5
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_healing
+    currency: IRON
+    amount: 8
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strength
+    currency: GOLD
+    amount: 6
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:regeneration
+    currency: IRON
+    amount: 7
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:leaping
+    currency: IRON
+    amount: 3
+  nameKey: shop.category.potions.name
+  nameColor: d
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+- ==: me.MineHome.Bedwars.Shop.ShopCategory
+  descriptionKey: shop.category.special.description
+  material: TNT
+  items:
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: LADDER
+    currency: BRONZE
+    amount: 16
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GUNPOWDER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Home Teleport"}],"text":""}'
+    currency: IRON
+    amount: 7
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FIRE_CHARGE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Gravity Grenade"}],"text":""}'
+    currency: GOLD
+    amount: 17
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: STRING
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Trap"}],"text":""}'
+    currency: IRON
+    amount: 3
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+    currency: GOLD
+    amount: 14
+  - ==: me.MineHome.Bedwars.Shop.ShopItem
+    item:
+      ==: me.MineHome.Bedwars.Item.Item
+      itemStack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COBWEB
+    currency: BRONZE
+    amount: 20
+  nameKey: shop.category.special.name
+  nameColor: '9'
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC

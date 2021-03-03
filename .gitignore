@@ -14,4 +14,9 @@ data/*/plugins/*.jar
 
 # Gamemode-specific
 data/hungergames/plugins/HungerGames/arenas.yml
-data/bedwars/plugins/BedWars/database
+data/hungergames/plugins/HungerGames/leaderboard.yml
+data/bedwars/plugins/Bedwars/database
+data/bedwars/plugins/Bedwars/arenas
+data/bedwars/plugins/Bedwars/data.yml
+data/bedwars/plugins/Bedwars/messages
+data/bedwars/plugins/MineHome/data.yml

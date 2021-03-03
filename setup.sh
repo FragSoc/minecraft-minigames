@@ -22,12 +22,13 @@ for mode in "${GAME_MODES[@]}"; do
   cp -vr /tmp/$mode/* data/$mode
 done
 # Map-specific configs
-cp -v static_maps/bedwars/Arena.yml data/bedwars/plugins/BedWars/arenas/Arenas.yml
+mkdir -p data/hungergames/plugins/HungerGames data/bedwars/plugins/Bedwars/arenas
+cp -v static_maps/bedwars/Arena.yml data/bedwars/plugins/Bedwars/arenas/Arenas.yml
 cp -v static_maps/hungergames/arenas.yml data/hungergames/plugins/HungerGames/arenas.yml
 
 # Download ops file
 if [ -n "${OPS_FILE_URL}" ]; then
-  wget --no-check-certificate "${OPS_FILE_URL}" -O tmp/minecraft-ops.json
+  wget -O /tmp/minecraft-ops.json "${OPS_FILE_URL}"
   for mod in "${GAME_MODES[@]}"; do
     cp -v /tmp/minecraft-ops.json data/$mode/ops.json
   done
