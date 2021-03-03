@@ -1,0 +1,14 @@
+# The external domain to run the servers under
+HOSTNAME="edjoduf.co.uk"
+
+# The User IDs to run the containers as, if you don't know what this is, don't change them
+DOCKER_UID="1000"
+DOCKER_GID="1000"
+
+# Versions of minecraft and plugins
+MINECRAFT_VERSION=1.16.5
+HUNGER_GAMES_VERSION=4.15.5
+
+# The google drive ID of the ops file to use
+# if left blank servers will create their own ops files normally
+OPS_GDRIVE_ID="1G8kHpFKIHUuIpQ16WQRX192A2f6JO7ay"

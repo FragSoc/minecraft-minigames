@@ -18,15 +18,21 @@ services:
 
   bedwars:
     <<: *defaults
+    ports:
+      - "25566:25565"
     volumes:
       - "./data/bedwars:/data"
 
   thewalls:
     <<: *defaults
+    ports:
+      - "25567:25565"
     volumes:
       - "./data/thewalls:/data"
 
   hungergames:
     <<: *defaults
+    ports:
+      - "25568:25565"
     volumes:
       - "./data/hungergames:/data"
