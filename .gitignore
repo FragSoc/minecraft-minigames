@@ -11,3 +11,4 @@ data/*/banned*
 data/*/world*
 data/*/ops.json
 data/*/plugins/*.jar
+data/hungergames/plugins/HungerGames/arenas.yml
