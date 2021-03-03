@@ -10,7 +10,7 @@ Bed Wars | `bedwars` | `<your ip>:25566` | `bedwars.<your domain>`
 
 1. Ensure you have [Git LFS](https://git-lfs.github.com/) set up
 1. Copy `vars.sh.example` to `vars.sh` and change variable values as necessary
-1. Run `./setup.sh`
+1. Run `./setup.sh`, adding the `-s` flag if you want to install our static maps
 1. Bring servers online with `docker-compose up -d`
 
 ## Connecting
