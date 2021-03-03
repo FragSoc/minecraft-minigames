@@ -11,6 +11,7 @@ GAME_MODES=(
 
 # Download plugins
 curl -L "https://github.com/ShaneBeeStudios/HungerGames/releases/download/${HUNGER_GAMES_VERSION}/HungerGames-${HUNGER_GAMES_VERSION}.jar" -o "data/hungergames/plugins/HungerGames-${HUNGER_GAMES_VERSION}.jar"
+# Should really download BedWars here too, but the plugin's proprietary and curse provides obfuscated download links
 
 # Download maps
 
