@@ -18,9 +18,12 @@ curl -L "https://github.com/ShaneBeeStudios/HungerGames/releases/download/${HUNG
 # Decompress and copy static maps in
 for mode in "${GAME_MODES[@]}"; do
   rm -rv data/$mode/world* /tmp/$mode
-  unzip static_maps/$mode.zip -d /tmp
+  unzip static_maps/$mode/world.zip -d /tmp
   cp -vr /tmp/$mode/* data/$mode
 done
+# Map-specific configs
+cp -v static_maps/bedwars/Arena.yml data/bedwars/plugins/BedWars/arenas/Arenas.yml
+cp -v static_maps/hungergames/arenas.yml data/hungergames/plugins/HungerGames/arenas.yml
 
 # Download ops file
 if [ -n "${OPS_FILE_URL}" ]; then

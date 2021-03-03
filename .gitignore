@@ -11,4 +11,7 @@ data/*/banned*
 data/*/world*
 data/*/ops.json
 data/*/plugins/*.jar
+
+# Gamemode-specific
 data/hungergames/plugins/HungerGames/arenas.yml
+data/bedwars/plugins/BedWars/database
