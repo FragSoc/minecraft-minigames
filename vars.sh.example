@@ -8,6 +8,10 @@ DOCKER_GID="1000"
 # Versions of minecraft and plugins
 MINECRAFT_VERSION=1.16.5
 HUNGER_GAMES_VERSION=4.15.5
+# A link to a static download of the bedwars plugin
+# No official (static) download link exists, so you must either host it yourself somewhere
+# or copy it in yourself to data/bedwars/plugins
+BEDWARS_PLUGIN_URL=
 
 # The URL to download the ops file from
 # if left blank servers will create their own ops files normally

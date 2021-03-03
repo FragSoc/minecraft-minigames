@@ -11,11 +11,13 @@ GAME_MODES=(
 
 # Download plugins
 curl -L "https://github.com/ShaneBeeStudios/HungerGames/releases/download/${HUNGER_GAMES_VERSION}/HungerGames-${HUNGER_GAMES_VERSION}.jar" -o "data/hungergames/plugins/HungerGames-${HUNGER_GAMES_VERSION}.jar"
-# Should really download BedWars here too, but the plugin's proprietary and curse provides obfuscated download links
+if [ -n "${BEDWARS_PLUGIN_URL}" ]; then
+  curl -L "${BEDWARS_PLUGIN_URL}" -o "data/bedwars/plugins/Bedwars.jar"
+fi
 
 # Download maps
 
-if [ "$1" == "--use-static-maps" || "$1" == "-s" ]; then
+if [[ "$1" == "--use-static-maps" || "$1" == "-s" ]]; then
   # Decompress and copy static maps in
   for mode in "${GAME_MODES[@]}"; do
     rm -rv data/$mode/world* /tmp/$mode
