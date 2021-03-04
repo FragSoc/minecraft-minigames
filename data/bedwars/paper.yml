@@ -79,6 +79,7 @@ messages:
     connection-throttle: Connection throttled! Please wait before reconnecting.
 world-settings:
   default:
+    fix-wither-targeting-bug: false
     light-queue-size: 20
     auto-save-interval: -1
     iron-golems-can-spawn-in-air: false

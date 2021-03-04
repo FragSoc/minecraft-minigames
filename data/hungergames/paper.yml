@@ -79,6 +79,7 @@ timings:
   server-name: Unknown Server
 world-settings:
   default:
+    fix-wither-targeting-bug: false
     light-queue-size: 20
     use-vanilla-world-scoreboard-name-coloring: false
     max-entity-collisions: 8

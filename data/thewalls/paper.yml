@@ -79,6 +79,7 @@ messages:
     connection-throttle: Connection throttled! Please wait before reconnecting.
 world-settings:
   default:
+    fix-wither-targeting-bug: false
     non-player-arrow-despawn-rate: -1
     creative-arrow-despawn-rate: -1
     spawner-nerfed-mobs-should-jump: false
