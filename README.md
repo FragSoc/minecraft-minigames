@@ -8,7 +8,7 @@ Game Mode | Service Name | IP-based Address | Host-based Address
 ---|---|---|---
 [Hunger Games](https://github.com/ShaneBeeStudios/HungerGames) | `hungergames` | `<your ip>:25568` | `hungergames.<your domain>`
 The Walls | `thewalls` | `<your ip>:25567` | `thewalls.<your domain>`
-[Bed Wars](https://www.mine-home.net/Bedwars?utm_campaign=bukkitorg&utm_source=dev-bukkit-org-bedwars&utm_medium=link&utm_content=moredetails) | `bedwars` | `<your ip>:25566` | `bedwars.<your domain>`
+[Bed Wars](https://github.com/ScreamingSandals/BedWars) | `bedwars` | `<your ip>:25566` | `bedwars.<your domain>`
 
 ## Setup
 

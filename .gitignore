@@ -15,10 +15,11 @@ data/*/world*
 vars.sh
 
 # Gamemode-specific
-data/bedwars/plugins/Bedwars/arenas
-data/bedwars/plugins/Bedwars/data.yml
-data/bedwars/plugins/Bedwars/database
-data/bedwars/plugins/Bedwars/messages
+data/bedwars/plugins/BedWars/arenas
+data/bedwars/plugins/BedWars/data.yml
+data/bedwars/plugins/BedWars/database
+data/bedwars/plugins/BedWars/messages
+data/bedwars/plugins/BedWars/record.yml
 data/bedwars/plugins/MineHome/data.yml
 data/bedwars/plugins/MineHome/profiles/
 data/hungergames/plugins/HungerGames/arenas.yml

@@ -12,7 +12,7 @@ GAME_MODES=(
 # Download plugins
 curl -L "https://github.com/ShaneBeeStudios/HungerGames/releases/download/${HUNGER_GAMES_VERSION}/HungerGames-${HUNGER_GAMES_VERSION}.jar" -o "data/hungergames/plugins/HungerGames-${HUNGER_GAMES_VERSION}.jar"
 if [ -n "${BEDWARS_PLUGIN_URL}" ]; then
-  curl -L "${BEDWARS_PLUGIN_URL}" -o "data/bedwars/plugins/Bedwars.jar"
+  curl -L "${BEDWARS_PLUGIN_URL}" -o "data/bedwars/plugins/BedWars.jar"
 fi
 
 # Download maps
@@ -25,8 +25,8 @@ if [[ "$1" == "--use-static-maps" || "$1" == "-s" ]]; then
     cp -vr /tmp/$mode/* data/$mode
   done
   # Map-specific configs
-  mkdir -p data/hungergames/plugins/HungerGames data/bedwars/plugins/Bedwars/arenas
-  cp -v static_maps/bedwars/Arena.yml data/bedwars/plugins/Bedwars/arenas/Arenas.yml
+  mkdir -p data/hungergames/plugins/HungerGames data/bedwars/plugins/BedWars/arenas
+  cp -v static_maps/bedwars/Arena.yml data/bedwars/plugins/BedWars/arenas/Arenas.yml
   cp -v static_maps/hungergames/arenas.yml data/hungergames/plugins/HungerGames/arenas.yml
 fi
 
