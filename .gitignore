@@ -19,5 +19,6 @@ data/bedwars/plugins/Bedwars/data.yml
 data/bedwars/plugins/Bedwars/database
 data/bedwars/plugins/Bedwars/messages
 data/bedwars/plugins/MineHome/data.yml
+**/errors.log
 data/hungergames/plugins/HungerGames/arenas.yml
 data/hungergames/plugins/HungerGames/leaderboard.yml
