@@ -27,6 +27,7 @@ if [[ "$1" == "--use-static-maps" || "$1" == "-s" ]]; then
   # Map-specific configs
   mkdir -p data/hungergames/plugins/HungerGames data/bedwars/plugins/BedWars/arenas
   cp -v static_maps/bedwars/Arena.yml data/bedwars/plugins/BedWars/arenas/Arenas.yml
+  cp -v static_maps/bedwars/sign.yml data/bedwars/plugins/BedWars/sign.yml
   cp -v static_maps/hungergames/arenas.yml data/hungergames/plugins/HungerGames/arenas.yml
 fi
 

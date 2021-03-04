@@ -20,6 +20,7 @@ data/bedwars/plugins/BedWars/data.yml
 data/bedwars/plugins/BedWars/database
 data/bedwars/plugins/BedWars/messages
 data/bedwars/plugins/BedWars/record.yml
+data/bedwars/plugins/BedWars/sign.yml
 data/bedwars/plugins/MineHome/data.yml
 data/bedwars/plugins/MineHome/profiles/
 data/hungergames/plugins/HungerGames/arenas.yml
