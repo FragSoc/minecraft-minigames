@@ -1,4 +1,5 @@
 # Generic
+**/errors.log
 data/*/*.jar
 data/*/banned*
 data/*/cache
@@ -19,6 +20,6 @@ data/bedwars/plugins/Bedwars/data.yml
 data/bedwars/plugins/Bedwars/database
 data/bedwars/plugins/Bedwars/messages
 data/bedwars/plugins/MineHome/data.yml
-**/errors.log
+data/bedwars/plugins/MineHome/profiles/
 data/hungergames/plugins/HungerGames/arenas.yml
 data/hungergames/plugins/HungerGames/leaderboard.yml
