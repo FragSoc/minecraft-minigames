@@ -33,6 +33,9 @@ bungeecord:
   motd: '%status% %players%/%max% %reset%'
   preferredgame: none
   enable: false
+  lobby: hub
+  stop: false
+  stopcommand: /yourcommand
 
 # Hide players outside the game
 hide-players: false
@@ -46,3 +49,16 @@ lobby-border: 0
 
 # https://www.mine-home.net/analytics
 analytics: true
+signs:
+  line:
+    '1': ' - BEDWARS - '
+    '2': '[%status%]'
+    '3': '%name%'
+    '4': '%players%/%max%'
+
+# Define a list of allowed commands in the game
+allowed-commands:
+- msg
+- reply
+- r
+- report
