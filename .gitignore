@@ -1,22 +1,23 @@
-vars.sh
+# Generic
 data/*/*.jar
+data/*/banned*
 data/*/cache
-data/*/logs
 data/*/eula.txt
 data/*/help.yml
-data/*/usercache.json
-data/*/whitelist.json
-data/*/version_history.json
-data/*/banned*
-data/*/world*
+data/*/logs
 data/*/ops.json
 data/*/plugins/*.jar
+data/*/usercache.json
+data/*/version_history.json
+data/*/whitelist.json
+data/*/world*
+vars.sh
 
 # Gamemode-specific
-data/hungergames/plugins/HungerGames/arenas.yml
-data/hungergames/plugins/HungerGames/leaderboard.yml
-data/bedwars/plugins/Bedwars/database
 data/bedwars/plugins/Bedwars/arenas
 data/bedwars/plugins/Bedwars/data.yml
+data/bedwars/plugins/Bedwars/database
 data/bedwars/plugins/Bedwars/messages
 data/bedwars/plugins/MineHome/data.yml
+data/hungergames/plugins/HungerGames/arenas.yml
+data/hungergames/plugins/HungerGames/leaderboard.yml
