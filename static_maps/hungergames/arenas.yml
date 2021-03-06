@@ -10,7 +10,7 @@ arenas:
       z2: -381
     info:
       cost: 0
-      timer: 300
+      timer: 600
       min-players: 6
       max-players: 24
     commands:
@@ -54,7 +54,7 @@ arenas:
       z2: 799
     info:
       cost: 0
-      timer: 300
+      timer: 600
       min-players: 12
       max-players: 24
     commands:
@@ -97,7 +97,7 @@ arenas:
       z2: 305
     info:
       cost: 0
-      timer: 300
+      timer: 600
       min-players: 12
       max-players: 24
     commands:
