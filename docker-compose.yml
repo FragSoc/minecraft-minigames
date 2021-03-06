@@ -13,6 +13,8 @@ x-defaults: &defaults
 services:
   router:
     command: "-mapping bedwars.${HOSTNAME}=bedwars:25565,thewalls.${HOSTNAME}=thewalls:25565,hungergames.${HOSTNAME}=hungergames:25565"
+    environment:
+      CONNECTION_RATE_LIMIT: "20"
     image: itzg/mc-router
     ports:
       - "25565:25565"
