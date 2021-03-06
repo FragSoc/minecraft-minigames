@@ -14,6 +14,11 @@ curl -L "https://github.com/ShaneBeeStudios/HungerGames/releases/download/${HUNG
 if [ -n "${BEDWARS_PLUGIN_URL}" ]; then
   curl -L "${BEDWARS_PLUGIN_URL}" -o "data/bedwars/plugins/BedWars.jar"
 fi
+curl -L "https://github.com/kernitus/BukkitOldCombatMechanics/releases/download/${OLD_COMBAT_MECHANICS_VERSION}/OldCombatMechanics.jar" -o "/tmp/OldCombatMechanics.jar"
+for mode in "${GAME_MODES[@]}"; do
+  cp -v /tmp/OldCombatMechanics.jar data/$mode/plugins
+done
+rm -fv /tmp/OldCombatMechanics.jar
 
 # Download maps
 
@@ -33,7 +38,7 @@ fi
 
 # Download ops file
 if [ -n "${OPS_FILE_URL}" ]; then
-  wget -O /tmp/minecraft-ops.json "${OPS_FILE_URL}"
+  curl -L -o /tmp/minecraft-ops.json "${OPS_FILE_URL}"
   for mode in "${GAME_MODES[@]}"; do
     cp -v /tmp/minecraft-ops.json data/$mode/ops.json
   done
