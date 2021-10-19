@@ -12,6 +12,7 @@ data/*/usercache.json
 data/*/version_history.json
 data/*/whitelist.json
 data/*/world*
+data/**/config-backup.yml
 vars.sh
 
 # Gamemode-specific
