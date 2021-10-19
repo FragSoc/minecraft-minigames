@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+if [ ! -f ./vars.sh ]; then
+  echo "No vars.sh file found!"
+  exit 1
+fi
+
 source vars.sh
 
 GAME_MODES=(
