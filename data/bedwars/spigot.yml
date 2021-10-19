@@ -26,6 +26,7 @@ stats:
   disable-saving: false
   forced-stats: {}
 settings:
+  log-named-deaths: true
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh

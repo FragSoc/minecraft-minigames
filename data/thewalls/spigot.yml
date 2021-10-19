@@ -26,6 +26,7 @@ stats:
   disable-saving: false
   forced-stats: {}
 settings:
+  log-named-deaths: true
   sample-count: 12
   player-shuffle: 0
   user-cache-size: 1000

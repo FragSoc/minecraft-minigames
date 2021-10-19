@@ -12,8 +12,11 @@
 
 verbose: false
 use-display-name-in-quit-message: false
-config-version: 20
+config-version: 23
 settings:
+  lag-compensate-block-breaking: true
+  send-full-pos-for-hard-colliding-entities: true
+  log-player-ip-addresses: true
   enable-player-collisions: true
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: -1
@@ -58,7 +61,42 @@ settings:
     total-multiplier: 0.98
   async-chunks:
     threads: -1
+  use-display-name-in-quit-message: false
+  loggers:
+    deobfuscate-stacktraces: true
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
+  item-validation:
+    display-name: 8192
+    loc-name: 8192
+    lore-line: 8192
+    book:
+      title: 8192
+      author: 8192
+      page: 16384
+  chunk-loading:
+    min-load-radius: 2
+    max-concurrent-sends: 2
+    autoconfig-send-distance: true
+    target-player-chunk-send-rate: 100.0
+    global-max-chunk-send-rate: -1.0
+    enable-frustum-priority: false
+    global-max-chunk-load-rate: -1.0
+    player-max-concurrent-loads: 4.0
+    global-max-concurrent-loads: 500.0
+  packet-limiter:
+    kick-message: '&cSent too many packets'
+    limits:
+      all:
+        interval: 7.0
+        max-packet-rate: 500.0
+      PacketPlayInAutoRecipe:
+        interval: 4.0
+        max-packet-rate: 5.0
+        action: DROP
 timings:
+  url: https://timings.aikar.co/
   enabled: true
   verbose: true
   server-name-privacy: false
@@ -79,6 +117,15 @@ messages:
     connection-throttle: Connection throttled! Please wait before reconnecting.
 world-settings:
   default:
+    piglins-guard-chests: true
+    allow-using-signs-inside-spawn-protection: false
+    map-item-frame-cursor-update-interval: 10
+    allow-player-cramming-damage: false
+    split-overstacked-loot: true
+    seed-based-feature-search-loads-chunks: true
+    fix-items-merging-through-walls: false
+    show-sign-click-command-failure-msgs-to-player: false
+    map-item-frame-cursor-limit: 128
     fix-wither-targeting-bug: false
     non-player-arrow-despawn-rate: -1
     creative-arrow-despawn-rate: -1
@@ -132,7 +179,7 @@ world-settings:
     prevent-moving-into-unloaded-chunks: false
     max-auto-save-chunks-per-tick: 24
     count-all-mobs-for-spawning: false
-    per-player-mob-spawns: false
+    per-player-mob-spawns: true
     delay-chunk-unloads-by: 10s
     should-remove-dragon: false
     ender-dragons-death-always-places-dragon-egg: false
@@ -175,6 +222,7 @@ world-settings:
     viewdistances:
       no-tick-view-distance: -1
     anti-xray:
+      max-block-height: 64
       enabled: false
       engine-mode: 1
       max-chunk-section-index: 3
@@ -218,6 +266,8 @@ world-settings:
         min: 20
         max: 40
     entity-per-chunk-save-limit:
+      fireball: -1
+      small_fireball: -1
       experience_orb: -1
       snowball: -1
       ender_pearl: -1
@@ -246,3 +296,26 @@ world-settings:
       vindicator:
       - NORMAL
       - HARD
+    mob-effects:
+      undead-immune-to-certain-effects: true
+      spiders-immune-to-poison-effect: true
+      immune-to-wither-effect:
+        wither: true
+        wither-skeleton: true
+    spawn-limits:
+      monsters: -1
+      animals: -1
+      water-animals: -1
+      water-ambient: -1
+      ambient: -1
+    tick-rates:
+      sensor:
+        villager:
+          secondarypoisensor: 40
+      behavior:
+        villager:
+          validatenearbypoi: -1
+    feature-seeds:
+      generate-random-seeds-for-all: false
+    unsupported-settings:
+      fix-invulnerable-end-crystal-exploit: true
