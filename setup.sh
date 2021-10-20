@@ -12,6 +12,7 @@ GAME_MODES=(
   "thewalls"
   "hungergames"
   "bedwars"
+  "skywars"
 )
 
 # Download plugins
@@ -20,7 +21,7 @@ if [ -n "${BEDWARS_PLUGIN_URL}" ]; then
   curl -L "${BEDWARS_PLUGIN_URL}" -o "data/bedwars/plugins/BedWars.jar"
 fi
 if [ -n "${SKYWARS_PLUGIN_URL}" ]; then
-  curl -L "${SKYWAYRS_PLUGIN_URL}" -o "data/skywars/plugins/SkyWars.jar"
+  curl -L "${SKYWARS_PLUGIN_URL}" -o "data/skywars/plugins/SkyWars.jar"
 fi
 curl -L "https://dev.bukkit.org/projects/worldedit/files/${WORLDEDIT_BUKKIT_FILE_ID}/download" -o "data/skywars/plugins/WorldEdit.jar"
 curl -L "https://github.com/kernitus/BukkitOldCombatMechanics/releases/download/${OLD_COMBAT_MECHANICS_VERSION}/OldCombatMechanics.jar" -o "/tmp/OldCombatMechanics.jar"
