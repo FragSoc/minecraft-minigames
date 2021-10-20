@@ -10,6 +10,7 @@ DOCKER_GID="1000"
 MINECRAFT_VERSION=1.17.1
 OLD_COMBAT_MECHANICS_VERSION=1.10.0
 HUNGER_GAMES_VERSION=4.15.6
+WORLDEDIT_BUKKIT_FILE_ID=3433988
 
 #################
 # Optional Vars #
@@ -19,6 +20,11 @@ HUNGER_GAMES_VERSION=4.15.6
 # No official (static) download link exists, so you must either host it yourself somewhere
 # or copy it in yourself to data/bedwars/plugins
 BEDWARS_PLUGIN_URL=
+
+# A link to a static download of the skywars plugin
+# No official (static) download link exists, so you must either host it yourself somewhere
+# or copy it in yourself to data/skywars/plugins
+SKYWARS_PLUGIN_URL=
 
 # The URL to download the ops file from
 OPS_FILE_URL=
