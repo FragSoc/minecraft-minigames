@@ -27,7 +27,8 @@ gived-player-respawn-items: []
 disable-hunger: false
 automatic-coloring-in-shop: true
 sell-max-64-per-click-in-shop: true
-destroy-placed-blocks-by-explosion-except: ''
+destroy-placed-blocks-by-explosion-except:
+- ''
 destroy-placed-blocks-by-explosion: true
 holo-above-bed: true
 allow-spectator-join: false
@@ -55,6 +56,7 @@ bungee:
     running: '%name%: Game is running [%current%/%max%]'
     rebuilding: '%name%: Rebuilding...'
     disabled: '%name%: Game is disabled'
+  kick-when-proxy-too-slow: true
 farmBlocks:
   enable: false
   blocks: []
@@ -94,6 +96,8 @@ vault:
   reward:
     kill: 5
     win: 20
+    final-kill: 5
+    bed-destroy: 0
 resources:
   gold:
     material: GOLD_INGOT
@@ -160,19 +164,51 @@ specials:
     turn-all-enderchests-to-teamchests: true
   throwable-fireball:
     explosion: 3.0
+    damage: 2.0
   auto-igniteable-tnt:
     explosion-time: 8
     damage-placer: true
 sounds:
-  on_bed_destroyed: ENTITY_ENDER_DRAGON_GROWL
-  on_countdown: UI_BUTTON_CLICK
-  on_game_start: ENTITY_PLAYER_LEVELUP
-  on_team_kill: ENTITY_PLAYER_LEVELUP
-  on_player_kill: ENTITY_PLAYER_BIG_FALL
-  on_item_buy: ENTITY_ITEM_PICKUP
-  on_upgrade_buy: ENTITY_EXPERIENCE_ORB_PICKUP
-  on_respawn_cooldown_wait: UI_BUTTON_CLICK
-  on_respawn_cooldown_done: ENTITY_PLAYER_LEVELUP
+  bed_destroyed:
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    volume: 1
+    pitch: 1
+  my_bed_destroyed:
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    volume: 1
+    pitch: 1
+  countdown:
+    sound: UI_BUTTON_CLICK
+    volume: 1
+    pitch: 1
+  game_start:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1
+    pitch: 1
+  team_kill:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1
+    pitch: 1
+  player_kill:
+    sound: ENTITY_PLAYER_BIG_FALL
+    volume: 1
+    pitch: 1
+  item_buy:
+    sound: ENTITY_ITEM_PICKUP
+    volume: 1
+    pitch: 1
+  upgrade_buy:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1
+    pitch: 1
+  respawn_cooldown_wait:
+    sound: UI_BUTTON_CLICK
+    volume: 1
+    pitch: 1
+  respawn_cooldown_done:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1
+    pitch: 1
 game-effects:
   end:
     effects:
@@ -220,6 +256,7 @@ statistics:
     bed-destroy: 25
     lose: 0
     record: 100
+    final-kill: 0
 database:
   host: localhost
   port: 3306
@@ -269,6 +306,8 @@ rewards:
   player-destroy-bed:
   - /example {player} {score}
   player-kill:
+  - /example {player} 10
+  player-final-kill:
   - /example {player} 10
 lore:
   generate-automatically: true
@@ -359,3 +398,5 @@ default-permissions:
   autojoin: true
   leaderboard: true
 version: 2
+enable-cheat-command-for-admins: false
+shopkeepers-are-silent: true
