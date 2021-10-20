@@ -12,7 +12,7 @@ x-defaults: &defaults
 
 services:
   router:
-    command: "-mapping bedwars.${HOSTNAME}=bedwars:25565,thewalls.${HOSTNAME}=thewalls:25565,hungergames.${HOSTNAME}=hungergames:25565,skyblock.${HOSTNAME}=skyblock:25565"
+    command: "-mapping bedwars.${HOSTNAME}=bedwars:25565,thewalls.${HOSTNAME}=thewalls:25565,hungergames.${HOSTNAME}=hungergames:25565,skywars.${HOSTNAME}=skywars:25565"
     environment:
       CONNECTION_RATE_LIMIT: "20"
     image: itzg/mc-router
@@ -44,10 +44,10 @@ services:
       - "./data/hungergames:/data"
       - "./data/hungergames/server.properties:/data/server.properties:ro"
 
-  skyblock:
+  skywars:
     <<: *defaults
     ports:
       - "25569:25565"
     volumes:
-      - "./data/skyblock:/data"
-      - "./data/skyblock/server.properties:/data/server.properties:ro"
+      - "./data/skywars:/data"
+      - "./data/skywars/server.properties:/data/server.properties:ro"
