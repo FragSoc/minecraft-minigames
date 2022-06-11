@@ -4,7 +4,7 @@ x-defaults: &defaults
   environment:
     EULA: "TRUE"
     TYPE: "PAPER"
-    VERION: "${MINECRAFT_VERSION}"
+    VERSION: "${MINECRAFT_VERSION}"
     UID: "${DOCKER_UID}"
     GID: "${DOCKER_GID}"
     MEMORY: "2G"
