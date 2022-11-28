@@ -23,6 +23,7 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
 settings:
+  log-named-deaths: true
   user-cache-size: 1000
   save-user-cache-on-stop-only: false
   moved-wrongly-threshold: 0.0625
@@ -62,6 +63,7 @@ commands:
   - tellraw
 world-settings:
   default:
+    thunder-chance: 100000
     verbose: false
     dragon-death-sound-radius: 0
     seed-village: 10387312
